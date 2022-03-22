@@ -1,4 +1,5 @@
 import textract
+import re
 
 
 pdfFilePath = r"C:\Users\Usuario\Desktop\Antonio\coverletter\coverletterANtonioManceras2022.pdf"
@@ -15,3 +16,13 @@ def arrayWords(text):
   # arrayWords=re.findall(r"[\w']+", textString)
   arrayWords=text.split()
   return arrayWords
+
+def arrayWordsLowerPdf(text):
+  textStringLower=text.lower()
+  arrayWords=re.findall(r"[\w']+", textStringLower)
+  return arrayWords
+
+
+def pdftoTextLower(text):
+  textStringLower=text.lower()
+  return textStringLower
