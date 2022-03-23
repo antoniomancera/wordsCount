@@ -13,7 +13,6 @@ def pdfToString(path):
 
 
 def arrayWords(text):
-  # arrayWords=re.findall(r"[\w']+", textString)
   arrayWords=text.split()
   return arrayWords
 
